@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top" class="content-page">
+  {% include nav-blog.html %}
+
+  <main role="main" class="container">
+    <article>
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-meta">
+                <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            </p>
+        </header>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
+  </main>
+
+  {% include contact.html %}
+  {% include scripts.html %}
+</body>
+
+</html>

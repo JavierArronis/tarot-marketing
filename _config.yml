@@ -1,0 +1,24 @@
+# Site settings
+title: The Marketer’s Tarot
+email: laura@tarot.marketing
+description: >- # this means to ignore newlines until "baseurl:"
+  Home of The Marketer’s Tarot.
+baseurl: "" # the subpath of your site, empty for the root
+url: "https://tarot.marketing" # the base hostname & protocol for your site
+
+twitter_username: #
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude unnecessary files and folders from the site build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  
+  
